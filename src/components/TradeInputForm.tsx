@@ -222,7 +222,7 @@ export function TradeInputForm({ onSubmit, isLoading, exchangeRate, onInputChang
                 className="sr-only"
                 disabled={isLoading}
               />
-              <span className="text-sm sm:text-base font-bold text-blue-600 bg-blue-100 px-2 py-1 rounded">USD</span>
+              <span className="text-lg sm:text-xl">🇺🇸</span>
               <span className="text-sm sm:text-base font-medium text-center">
                 US Stock/ETF
               </span>
@@ -241,7 +241,7 @@ export function TradeInputForm({ onSubmit, isLoading, exchangeRate, onInputChang
                 className="sr-only"
                 disabled={isLoading}
               />
-              <span className="text-sm sm:text-base font-bold text-red-600 bg-red-100 px-2 py-1 rounded">CAD</span>
+              <span className="text-lg sm:text-xl">🇨🇦</span>
               <span className="text-sm sm:text-base font-medium text-center">
                 Canadian Stock/ETF
               </span>
@@ -296,14 +296,14 @@ export function TradeInputForm({ onSubmit, isLoading, exchangeRate, onInputChang
                 className={`w-full px-4 sm:px-6 py-3 sm:py-4 text-xl sm:text-2xl font-bold border-2 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all bg-gray-50 ${
                   errors.pricePerShare ? 'border-red-500 bg-red-50' : 
                   priceFetched ? 'border-green-300 bg-green-50' : 'border-gray-200 hover:border-gray-300'
-                } ${stockSymbol.trim() ? 'pr-20 sm:pr-28' : ''}`}
+                } ${stockSymbol.trim() && selectedStockType === 'US' ? 'pr-20 sm:pr-28' : ''}`}
                 placeholder={getStockPricePlaceholder()}
                 step="0.01"
                 min="0.01"
                 disabled={isLoading}
               />
-              {/* Load Market Price Button - For both US and CAD stocks with symbol */}
-              {stockSymbol.trim() && (
+              {/* Load Market Price Button - Only for US stocks with symbol */}
+              {stockSymbol.trim() && selectedStockType === 'US' && (
                 <button
                   type="button"
                   onClick={handleFetchPrice}
