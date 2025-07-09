@@ -1,6 +1,6 @@
 const EXCHANGE_RATE_API_URL = 'https://api.exchangerate-api.com/v4/latest/USD';
 
-exports.handler = async (event, context) => {
+export const handler = async (event, context) => {
   // Enable CORS
   const headers = {
     'Access-Control-Allow-Origin': '*',

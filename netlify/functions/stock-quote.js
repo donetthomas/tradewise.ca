@@ -4,7 +4,7 @@ const FMP_API_KEY = process.env.FMP_API_KEY;
 const FINNHUB_BASE_URL = 'https://finnhub.io/api/v1';
 const FMP_BASE_URL = 'https://financialmodelingprep.com';
 
-exports.handler = async (event, context) => {
+export const handler = async (event, context) => {
   // Enable CORS
   const headers = {
     'Access-Control-Allow-Origin': '*',
