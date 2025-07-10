@@ -9,10 +9,12 @@ export function Footer() {
           {/* Brand */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center gap-3 mb-4">
-              <div className="bg-blue-600 p-2 rounded-lg">
+              <div className="bg-blue-600 p-2 rounded-lg shadow-lg">
                 <Calculator className="w-6 h-6 text-white" />
               </div>
-              <span className="text-2xl font-bold text-white">FeeCompare</span>
+              <span className="text-3xl font-bold text-white tracking-wide">
+                TradeWiser
+              </span>
             </div>
             <p className="text-gray-400 leading-relaxed mb-4 max-w-md">
               The most comprehensive tool for comparing Canadian broker fees. 
@@ -53,25 +55,25 @@ export function Footer() {
 
           {/* Resources */}
           <div>
-            <h3 className="text-white font-semibold mb-4">Resources</h3>
+            <h3 className="text-white font-semibold mb-4">Company</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#about" className="text-gray-400 hover:text-white transition-colors">
+                <a href="/about" className="text-gray-400 hover:text-white transition-colors">
                   About Us
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                <a href="/privacy" className="text-gray-400 hover:text-white transition-colors">
                   Privacy Policy
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                <a href="/terms" className="text-gray-400 hover:text-white transition-colors">
                   Terms of Service
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                <a href="/contact" className="text-gray-400 hover:text-white transition-colors">
                   Contact
                 </a>
               </li>

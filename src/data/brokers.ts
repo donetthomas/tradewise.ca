@@ -42,7 +42,7 @@ export const brokers: Broker[] = [
   {
     id: 'ibkr',
     name: 'Interactive Brokers',
-    website: 'https://www.interactivebrokers.com',
+    website: 'https://www.interactivebrokers.ca',
     logo: '/ibkr.png',
     hasFreeUSDAccount: true,
     supportsTFSA: true,
@@ -69,7 +69,7 @@ export const brokers: Broker[] = [
   {
     id: 'webull',
     name: 'Webull',
-    website: 'https://www.webull.com',
+    website: 'https://www.webull.ca',
     logo: '/webull.png',
     hasFreeUSDAccount: false,
     supportsTFSA: true,
