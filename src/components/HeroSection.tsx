@@ -56,7 +56,7 @@ export function HeroSection({ onGetStarted }: HeroSectionProps) {
               <div className="bg-orange-600/20 p-3 rounded-full w-16 h-16 mx-auto mb-3 flex items-center justify-center">
                 <Users className="w-8 h-8 text-orange-300" />
               </div>
-              <p className="text-blue-100 font-medium">8 Brokers</p>
+              <p className="text-blue-100 font-medium">7 Brokers</p>
             </div>
           </div>
 
@@ -69,7 +69,7 @@ export function HeroSection({ onGetStarted }: HeroSectionProps) {
               Calculate Fees Now
             </button>
             <a
-              href="#features"
+              href="#how-it-works"
               className="border-2 border-blue-300 text-blue-100 py-4 px-8 rounded-2xl font-bold text-lg hover:bg-blue-600/20 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all w-full sm:w-auto text-center"
             >
               Learn More

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Calculator, Mail, ExternalLink } from 'lucide-react';
 
 export function Footer() {
@@ -31,24 +32,24 @@ export function Footer() {
             <h3 className="text-white font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#calculator" className="text-gray-400 hover:text-white transition-colors">
+                <Link to="/calculator" className="text-gray-400 hover:text-white transition-colors">
                   Fee Calculator
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#features" className="text-gray-400 hover:text-white transition-colors">
+                <Link to="/features" className="text-gray-400 hover:text-white transition-colors">
                   Features
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#brokers" className="text-gray-400 hover:text-white transition-colors">
+                <Link to="/brokers" className="text-gray-400 hover:text-white transition-colors">
                   Supported Brokers
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#faq" className="text-gray-400 hover:text-white transition-colors">
+                <Link to="/faq" className="text-gray-400 hover:text-white transition-colors">
                   FAQ
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

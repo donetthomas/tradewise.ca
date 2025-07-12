@@ -112,7 +112,7 @@ export function TestimonialsSection() {
             </div>
             <div>
               <div className="text-3xl sm:text-4xl font-bold text-green-600 mb-2">
-                $500K+
+                $100K+
               </div>
               <div className="text-gray-600 font-medium">
                 Fees Saved by Users
@@ -120,7 +120,7 @@ export function TestimonialsSection() {
             </div>
             <div>
               <div className="text-3xl sm:text-4xl font-bold text-purple-600 mb-2">
-                8
+                7
               </div>
               <div className="text-gray-600 font-medium">
                 Brokers Compared

@@ -40,7 +40,7 @@ export function FeaturesSection() {
     {
       icon: Zap,
       title: 'Instant Comparisons',
-      description: 'Compare 8 major Canadian brokers side-by-side with rankings and detailed fee analysis.',
+      description: 'Compare 7 major Canadian brokers side-by-side with rankings and detailed fee analysis.',
       color: 'red'
     },
     {

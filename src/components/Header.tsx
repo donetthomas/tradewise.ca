@@ -32,51 +32,30 @@ export function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            {isHomePage ? (
-              <a 
-                href="#calculator" 
-                className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Calculator
-              </a>
-            ) : (
-              <Link 
-                to="/" 
-              >Calculator</Link>
-            )}
-            {isHomePage && (
-              <>
-                <a 
-                  href="#features" 
-                  className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Features
-                </a>
-                <a 
-                  href="#brokers" 
-                  className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Brokers
-                </a>
-                <a 
-                  href="#faq" 
-                  className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  FAQ
-                </a>
-                <a 
-                  href="#about" 
-                  className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  About
-                </a>
-              </>
-            )}
+            <Link 
+              to="/calculator" 
+              className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+            >
+              Calculator
+            </Link>
+            <Link 
+              to="/features" 
+              className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+            >
+              Features
+            </Link>
+            <Link 
+              to="/brokers" 
+              className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+            >
+              Brokers
+            </Link>
+            <Link 
+              to="/faq" 
+              className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+            >
+              FAQ
+            </Link>
           </nav>
 
           {/* Mobile menu button */}
@@ -92,48 +71,34 @@ export function Header() {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-gray-200">
             <nav className="flex flex-col space-y-4">
-              <a 
-                href="#calculator" 
+              <Link 
+                to="/calculator" 
                 className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Calculator
-              </a>
-              <a 
-                href="/blog" 
-                className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Blog
-              </a>
-              <a 
-                href="#features" 
+              </Link>
+              <Link 
+                to="/features" 
                 className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Features
-              </a>
-              <a 
-                href="#brokers" 
+              </Link>
+              <Link 
+                to="/brokers" 
                 className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Brokers
-              </a>
-              <a 
-                href="#faq" 
+              </Link>
+              <Link 
+                to="/faq" 
                 className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 FAQ
-              </a>
-              <a 
-                href="#about" 
-                className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                About
-              </a>
+              </Link>
             </nav>
           </div>
         )}
